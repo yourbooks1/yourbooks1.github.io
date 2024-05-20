@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="icon" href="https://cdn.luogu.com.cn/upload/usericon/745903.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.luogu.com.cn/upload/usericon/745903.png" type="image/x-icon">
+    <title>书架</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        img.center {
+            display: block;
+            margin: auto;
+        }
+        .bookshelf {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .book {
+            width: 150px;
+            height: 200px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .book img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+        
+        .book p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+        
+        .book a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+    <script>
+        function goToBookPage(bookUrl) {
+            // 跳转到书籍链接页面
+            window.location.href = bookUrl;
+        }
+    </script>
+</head>
+<body>
+    <h1>我的书架</h1>
+        <p></p>
+        <img src="payment.jpg" class="center" alt="awa" width=150pw height=150ph>
+    <div class="bookshelf">
+        <div class="book" onclick="goToBookPage('无始皇手谕，不得出银河边关.html')">
+            <img src="无始皇手谕，不得出银河边关.jpg" width=100px height=100px alt="无始皇手谕，不得出银河边关">
+            <p>无始皇手谕，不得出银河边关</p><p>作者：玄幻仙秦 已完结</p>
+        </div>
+        <div class="book" onclick="goToBookPage('book2.html')">
+            <img src="book2.jpg" alt="Book 2">
+            <p>Book 2</p>
+        </div>
+        <div class="book" onclick="goToBookPage('book3.html')">
+            <img src="book3.jpg" alt="Book 3">
+            <p>Book 3</p>
+        </div>
+        <!-- 添加更多书籍 -->
+    </div>
+</body>
+</html>
